@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Grundlagen der Programmierung - Datentypen</title>
+</head>
+<body>
+<script type="text/javascript">
+    // integer
+    var test = 1;
+
+    // float
+    var floatWert = 1012.3456789;
+
+    // NaN
+    var geteiltDurchZwei = 42.23 / "zwei";
+
+    if (isNaN(geteiltDurchZwei)) {
+        document.write("ungültige Nummer<br>");
+    } else {
+        document.write("geteiltdurchZwei: " + geteiltDurchZwei + "<br>")
+    }
+
+    // string
+    var eineZeichenkette = "meine Zeichenkette";
+    var zweiteZeichenzette = "ist toll";
+    document.write(eineZeichenkette + " " + zweiteZeichenzette + "<br>");
+
+    // boolean (ja = 1 = true / nein = 0 = false)
+    var boolscherWert = true;
+
+    if (boolscherWert == 1) {
+        document.write("boolscherWert ist 1 <br>");
+    }
+
+    // array / Liste
+    var produkt = [1, 2, 3, "test", 12.34];
+    document.write("element: " + produkt[4] + "<br>");
+
+    // associative array
+    var person = { name: "Jan", alter: 31 };
+    document.write(person["name"] + "<br>");
+</script>
+</body>
+</html>
