@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Grundlagen der Programmierung - switch()</title>
+</head>
+<body>
+<script type="text/javascript">
+    var auswahl = prompt("Antwort a, b oder c?");
+
+    switch (auswahl.toLowerCase()) {
+        case 'a':
+            document.write("Antwort a ausgewählt!");
+            break;
+        case 'b':
+            document.write("Antwort b ausgewählt!");
+            break;
+        case 'c':
+            document.write("Antwort c ausgewählt!");
+            break;
+        default:
+            document.write("Ungültige Eingabe: " + auswahl);
+    }
+</script>
+</body>
+</html>

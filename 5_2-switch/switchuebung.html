@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Grundlagen der Programmierung - switch()</title>
+</head>
+<body>
+<script type="text/javascript">
+    var auswahl = prompt("Wünschen Sie 12, 24 oder 48 Monate Laufzeit?");
+
+    switch (auswahl) {
+        case '12':
+            document.write("Sie müssen 4% Zinsen zahlen!");
+            break;
+        case '24':
+            document.write("Sie müssen 5% Zinsen zahlen!");
+            break;
+        case '48':
+            document.write("Sie müssen 6% Zinsen zahlen!");
+            break;
+        default:
+            document.write("Gültige Eingaben sind: 12, 24 und 48!");
+    }
+</script>
+</body>
+</html>
