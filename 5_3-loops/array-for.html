@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Grundlagen der Programmierung - Arrays und Schleifen</title>
+</head>
+<body>
+<script type="text/javascript">
+    // einfaches beispiel
+    var einArray = [9,8,7,6];
+    for (var i = 0; i < einArray.length; i++ ) {
+        document.write(
+                "element bei einArray[" + i + "] " + einArray[i] + "<br>"
+        );
+    }
+
+    // assoc.
+    var elemente = {name: "Jan", nachname: "Brinkmann", alter: 31};
+    for (var j in elemente) {
+        document.write("elemente[" + j +"]: " + elemente[j] + "<br>");
+    }
+
+    // suche
+    var haystack = ["Ina", "Tina", "Lina"];
+    var needle = prompt("Ina, Tina oder Lina?");
+    for (var k in haystack) {
+        if (needle == haystack[k]) {
+            document.write("Treffer bei Element #" + k);
+            break;
+        }
+    }
+
+</script>
+</body>
+</html>
