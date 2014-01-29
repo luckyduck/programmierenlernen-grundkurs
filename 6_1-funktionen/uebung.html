@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Grundlagen der Programmierung - Funktionen</title>
+</head>
+<body>
+<script type="text/javascript">
+
+/*
+ 1. Funktion definieren
+ -> Frage als Parameter übergeben
+ -> mittels prompt() abfragen
+ -> Eingabe zurückgeben (Stichwort return)
+*/
+function getWert(frage)
+{
+    var answer = prompt(frage);
+    return answer;
+}
+
+/*
+ 2. Aufruf der Funktion, Ausgabe der Antwort
+ */
+var antwort = getWert("Wie ist Dein Name?");
+document.write("Hallo, " + antwort);
+
+</script>
+</body>
+</html>

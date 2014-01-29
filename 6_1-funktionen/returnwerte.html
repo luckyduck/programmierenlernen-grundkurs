@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Grundlagen der Programmierung - Funktionen</title>
+</head>
+<body>
+<script type="text/javascript">
+//
+function berechnePreis(rabattPct, origPreis)
+{
+    var rabattBetrag = origPreis * rabattPct / 100;
+    var newPrice = origPreis - rabattBetrag;
+
+    return newPrice;
+}
+document.write(berechnePreis(10, 1.00) + "<br>");
+
+//
+function getName()
+{
+    return "Jan Brinkmann";
+}
+document.write(getName());
+
+</script>
+</body>
+</html>
