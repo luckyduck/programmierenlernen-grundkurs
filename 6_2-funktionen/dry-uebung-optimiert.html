@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Grundlagen der Programmierung - Funktionen</title>
+</head>
+<body>
+<script type="text/javascript">
+
+// 1. neue Funktion
+function msg(text)
+{
+    document.write(text + "<br>");
+}
+
+function addiere(a, b)
+{
+    return a + b;
+}
+
+// 2. array statt einzelner aufrufe
+var meinArray = [ [3,2], [67,3], [42,3] ];
+for (var i = 0; i < meinArray.length; i++) {
+    msg(addiere(meinArray[i][0], meinArray[i][1]));
+}
+
+</script>
+</body>
+</html>
