@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Grundlagen der Programmierung - Objekte</title>
+</head>
+<body>
+<script type="text/javascript">
+    // document
+    document.write("Test<br>");
+
+    // window
+    //var name = window.prompt("Ihr Name lautet?");
+    //window.alert("Hallo, " + name);
+
+    // screen
+    document.write("Auflösung: " + screen.width + "x" + screen.height + "<br>");
+
+    // Math.random
+    var min = 2;
+    var max = 150;
+    var zufall = Math.floor(Math.random() * (max - min + 1)) + min;
+    document.write("Zufallszahl: " +zufall + "<br>" );
+
+    // window.location
+    window.location.href = "http://de.selfhtml.org/javascript/objekte/index.htm";
+</script>
+</body>
+</html>

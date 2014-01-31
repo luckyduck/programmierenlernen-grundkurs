@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Grundlagen der Programmierung - Objekte</title>
+</head>
+<body>
+<script type="text/javascript">
+
+function Fahrzeug(marke, farbe)
+{
+    this.farbe = farbe;
+    this.marke = marke;
+}
+var gruenerSmart = new Fahrzeug("Smart", "grün");
+
+document.write("Mein Auto ist ein "
+               + gruenerSmart.marke
+               + " in "
+               + gruenerSmart.farbe);
+
+
+</script>
+</body>
+</html>
