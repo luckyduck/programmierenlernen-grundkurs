@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Grundlagen der Programmierung - Objekte</title>
+</head>
+<body>
+<script type="text/javascript">
+
+    function Uhr(uhrzeit)
+    {
+        this.uhrzeit = uhrzeit;
+        this.stellen = stellen;
+
+        function stellen(neueUhrzeit)
+        {
+            this.uhrzeit = neueUhrzeit;
+        }
+    }
+
+    var meineUhr = new Uhr("11:30");
+    document.write("Uhrzeit: " + meineUhr.uhrzeit + "<br>");
+    meineUhr.stellen("15:30");
+    document.write("Uhrzeit: " + meineUhr.uhrzeit + "<br>");
+
+</script>
+</body>
+</html>

@@ -7,18 +7,21 @@
 <body>
 <script type="text/javascript">
 
-function Fahrzeug(marke, farbe)
+function Auto(marke, ps)
 {
-    this.farbe = farbe;
     this.marke = marke;
+    this.ps = ps;
+    document.write("PS Wert fuer Marke: " + marke + " - " + ps + "<br>");
 }
-var gruenerSmart = new Fahrzeug("Smart", "grün");
+
+var smart = new Auto("Smart", 45);
+var ford = new Auto("Ford", 100);
 
 document.write("Mein Auto ist ein "
-               + gruenerSmart.marke
-               + " in "
-               + gruenerSmart.farbe);
-
+               + ford.marke
+               + " mit "
+               + ford.ps
+               + "PS");
 
 </script>
 </body>

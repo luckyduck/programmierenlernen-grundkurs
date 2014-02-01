@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Grundlagen der Programmierung - Objekte</title>
+</head>
+<body>
+<script type="text/javascript">
+
+function Fahrrad(farbe)
+{
+    this.farbe = farbe;
+    this.lackieren = lackieren;
+
+    function lackieren(neueFarbe)
+    {
+        this.farbe = neueFarbe;
+    }
+}
+
+var rad = new Fahrrad("grün");
+document.write("Farbe: " + rad.farbe + "<br>");
+rad.lackieren("rot");
+document.write("Farbe: " + rad.farbe + "<br>");
+
+</script>
+</body>
+</html>

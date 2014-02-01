@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Grundlagen der Programmierung - Objekte</title>
+</head>
+<body>
+<script type="text/javascript">
+
+//
+function MeineKlasse()
+{
+    if (this == window) {
+        document.write("this zeigt auf window");
+    } else {
+        document.write("this zeigt nicht auf window");
+    }
+}
+
+var obj = new MeineKlasse();
+
+</script>
+</body>
+</html>
