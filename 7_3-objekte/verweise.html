@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Grundlagen der Programmierung - Objekte</title>
+</head>
+<body>
+<script type="text/javascript">
+
+function Person(name)
+{
+    this.name = name;
+}
+
+var peter = new Person("Peter");
+document.write("Peter #1: " + peter.name + "<br>");
+
+var susi = peter;
+susi.name = "Susi";
+document.write("Suse #1: " + susi.name + "<br>");
+document.write("Peter #2: " + peter.name + "<br>");
+
+
+</script>
+</body>
+</html>

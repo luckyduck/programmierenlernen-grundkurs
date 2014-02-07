@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Grundlagen der Programmierung - Objekte</title>
+</head>
+<body>
+<script type="text/javascript">
+
+    function EinFahrzeug(farbe)
+    {
+        this.farbe = farbe;
+    }
+
+    function EinRad(farbe, rahmengroesse)
+    {
+        this.constructor(farbe);
+        this.rahmengroesse = rahmengroesse;
+    }
+    EinRad.prototype = new EinFahrzeug();
+
+    var meinFahrzeug = new EinFahrzeug("rot");
+    var meinRad = new EinRad("blau", "L");
+
+    // instanceof = eine instanz von?
+    if ( meinFahrzeug instanceof EinFahrzeug) {
+        document.write("EinFahrzeug!<br>");
+    }
+
+    if ( meinRad instanceof EinFahrzeug) {
+        document.write("Auch EinFahrzeug!<br>");
+    }
+</script>
+</body>
+</html>

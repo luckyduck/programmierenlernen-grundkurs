@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Grundlagen der Programmierung - Objekte</title>
+</head>
+<body>
+<script type="text/javascript">
+
+function MasterFahrzeug(farbe)
+{
+    this.farbe = farbe;
+    this.fahrzeugBeschreiben = fahrzeugBeschreiben;
+
+    function fahrzeugBeschreiben()
+    {
+        return "Farbe: '" + this.farbe + "'";
+    }
+}
+
+function Rad(farbe, rahmengroesse)
+{
+    this.constructor(farbe);
+
+    this.rahmengroesse = rahmengroesse;
+    this.klingeln = klingeln;
+
+    function klingeln()
+    {
+        document.write("ring, ring!<br>");
+    }
+}
+Rad.prototype = new MasterFahrzeug();
+
+var meinFahrzeug = new MasterFahrzeug("rot");
+document.write("fahrzeug: " + meinFahrzeug.fahrzeugBeschreiben() + "<br>");
+
+var meinRad = new Rad("blau", "L");
+document.write("rad: " + meinRad.fahrzeugBeschreiben() + "<br>");
+meinRad.klingeln();
+
+</script>
+</body>
+</html>
